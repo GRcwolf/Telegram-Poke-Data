@@ -125,3 +125,6 @@ dmypy.json
 
 #ide
 .idea
+
+# private data
+.key
