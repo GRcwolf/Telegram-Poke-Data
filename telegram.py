@@ -1,6 +1,8 @@
 import requests
+import os
 
-key_file = open('.key', 'r')
+path = os.path.dirname(__file__)
+key_file = open(path + '/.key', 'r')
 KEY = key_file.read()
 key_file.close()
 
