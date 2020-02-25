@@ -86,8 +86,8 @@ def unsubscribe_chat(chat_id):
     new_chat_ids = []
     for current_subscriber in current_subscribers:
         if not new_chat_id == current_subscriber:
-            new_chat_ids.append(new_chat_id)
+            new_chat_ids.append(current_subscriber)
     chat_file = open(path + '/.chats', 'w')
-    chat_file.writelines(new_chat_ids)
+    chat_file.write('')
+    [chat_file.write(new_chat_id) for new_chat_id in new_chat_ids]
     chat_file.close()
-

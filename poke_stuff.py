@@ -6,6 +6,7 @@ import poke_utils
 def main():
     poke_api = PokeApi()
     telegram.update_subscriptions()
+    # Send
     image_dictionary = {'back_default': 'Back',
                         'back_shiny': 'Back Shiny',
                         'front_default': 'Front',
