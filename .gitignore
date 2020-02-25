@@ -128,3 +128,5 @@ dmypy.json
 
 # private data
 .key
+.chats
+.last_update
