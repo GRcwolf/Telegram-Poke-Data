@@ -13,9 +13,15 @@ def get_me():
     return requests.get(BASE_PATH + 'getMe').json()
 
 
-def send_message(msg):
-    return requests.post(BASE_PATH + 'sendMessage', dict(chat_id=530378414, text=msg)).json()
+def send_message(msg, parse_mode='HTML'):
+    return requests.post(BASE_PATH + 'sendMessage', dict(chat_id=530378414, text=msg, parse_mode=parse_mode)).json()
 
 
-def send_image(image, caption='', silent=False):
-    return requests.post(BASE_PATH + 'sendPhoto', dict(chat_id=530378414, photo=image, caption=caption, disable_notification=silent))
+def send_image(image, caption='', parse_mode='HTML', silent=False):
+    return requests.post(BASE_PATH + 'sendPhoto', dict(
+        chat_id=530378414,
+        parse_mode=parse_mode,
+        photo=image,
+        caption=caption,
+        disable_notification=silent
+    ))
