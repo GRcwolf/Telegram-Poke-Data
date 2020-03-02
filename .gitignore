@@ -122,3 +122,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#ide
+.idea
+
+# private data
+.key
+.chats
+.last_update
