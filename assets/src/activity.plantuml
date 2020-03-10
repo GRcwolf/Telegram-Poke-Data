@@ -1,0 +1,12 @@
+@startuml
+(*) --> check for updates
+--> process updates
+--> get all pokemon
+--> choose a random pokemon
+--> get detailed infos of pokemon
+--> send images to subscribers
+--> "gather different information
+about the pokemon"
+--> send the information to the subscribers
+--> (*)
+@enduml

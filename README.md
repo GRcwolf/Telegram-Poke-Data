@@ -87,3 +87,7 @@ For the functionality and the understanding of the, please refer to to python fi
 This diagram should provide an overview of how the program acts.
 
 ![Sequence diagram](assets/images/sequence.png)
+
+Here another more simplified view of the program's steps without the specific actors.
+
+![Activity diagram](assets/images/activity.png)
