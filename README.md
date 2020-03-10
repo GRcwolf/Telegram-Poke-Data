@@ -46,3 +46,35 @@ First create a file `.chats`. This file is completely empty.
 
 Afterwards create a file called `.last_update`. This file should contain `1` as text.
 This file also can't have a line break at the end.
+
+## Running the application
+You can run the application with$
+```shell script
+python poke_stuff.py
+```
+
+On Linux or other systems with multiple python versions installed you may need to write
+```shell script
+python3 poke_stuff.py
+```
+
+### Cron jobs
+You can also define this as a cron job if you like.
+This isn't a problem because the program does not require any user interaction while running. 
+
+## How it works
+This section shows how the application works.
+
+### Understanding the files
+| File         | Description                                                      |
+| ------------ | -----------------------------------------------------------------|
+| .chats       | Contains the chat ids which are subscribed. (one for each line)  |
+| .key         | Contains the token of your bot.                                  |
+| .last_update | Contains an integer defining the id of the last bot update call. |
+
+For the functionality and the understanding of the, please refer to to python files themselves.
+
+### Overview of the programs procedure
+This diagram should provide an overview of how the program acts.
+
+![Sequence diagram](assets/images/sequence.png)
