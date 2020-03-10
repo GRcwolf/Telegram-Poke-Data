@@ -47,7 +47,9 @@ First create a file `.chats`. This file is completely empty.
 Afterwards create a file called `.last_update`. This file should contain `1` as text.
 This file also can't have a line break at the end.
 
-## Running the application
+## Usage
+
+### Running the application
 You can run the application with$
 ```shell script
 python poke_stuff.py
@@ -58,9 +60,16 @@ On Linux or other systems with multiple python versions installed you may need t
 python3 poke_stuff.py
 ```
 
-### Cron jobs
+#### Cron jobs
 You can also define this as a cron job if you like.
 This isn't a problem because the program does not require any user interaction while running. 
+
+### Using the bot
+You can get the information about the pokemon if you text your bot the command `/subscribe` (a simple text message).
+
+The subscribers will receive the information about the pokemon when the application is executed.
+
+You can also unsubscribe from the the list with the command `/unsubscribe`.
 
 ## How it works
 This section shows how the application works.
