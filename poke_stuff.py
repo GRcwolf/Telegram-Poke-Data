@@ -1,4 +1,4 @@
-from PokeApi import PokeApi
+from poke_api import PokeApi
 import telegram
 import poke_utils
 
