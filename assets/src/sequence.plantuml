@@ -1,0 +1,18 @@
+@startuml
+poke_stuff -> telegram: Update subscribers
+activate poke_stuff
+activate telegram
+poke_stuff -> poke_api: Get random pokemon
+activate poke_api
+poke_api -> poke_api: Get single pokemon
+poke_api --> poke_stuff: return pokemon
+deactivate poke_api
+poke_stuff -> telegram: Send image
+poke_stuff -> poke_utils: Get moves
+activate poke_utils
+poke_utils --> poke_stuff: Return moves
+deactivate poke_utils
+poke_stuff -> telegram: Send message
+deactivate telegram
+deactivate poke_stuff
+@enduml
