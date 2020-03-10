@@ -30,6 +30,7 @@ def main():
               "\n" + '<b>Order:</b> ' + str(pokemon['order']) +\
               "\n" + '<b>Height:</b> ' + str(pokemon['height']) +\
               "\n" + '<b>Weight:</b> ' + str(pokemon['weight']) +\
+              "\n" + '<b>Abilities:</b> ' + ', '.join(poke_utils.get_abilities(pokemon)) +\
               "\n" + '<b>Moves:</b> ' + ', '.join(poke_utils.get_moves_with_link(pokemon))
     # Send the message to the subscribed users.
     telegram.send_message(message, 'HTML')
