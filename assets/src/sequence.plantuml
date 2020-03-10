@@ -11,8 +11,10 @@ deactivate poke_api
 poke_stuff -> telegram: Send image
 telegram -> telegram: Get subscribers
 telegram --> poke_stuff
-poke_stuff -> poke_utils: Get moves
+poke_stuff -> poke_utils: Get abilities
 activate poke_utils
+poke_utils --> poke_stuff: Return abilities
+poke_stuff -> poke_utils: Get moves
 poke_utils --> poke_stuff: Return moves
 deactivate poke_utils
 poke_stuff -> telegram: Send message
